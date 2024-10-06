@@ -53,8 +53,8 @@ resource accounts_byc_openai_name_gpt_4 'Microsoft.CognitiveServices/accounts/de
   properties: {
     model: {
       format: 'OpenAI'
-      name: 'gpt-4'
-      version: '0125-Preview'
+      name: 'gpt-4o'
+      version: '2024-05-13'
     }
     versionUpgradeOption: 'OnceCurrentVersionExpired'
     raiPolicyName: 'Microsoft.Default'

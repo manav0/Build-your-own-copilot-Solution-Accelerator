@@ -881,7 +881,7 @@
                 "raiPolicyName": "Microsoft.Default"
               },
               "dependsOn": [
-                "[resourceId('Microsoft.CognitiveServices/accounts/deployments', parameters('accounts_byc_openai_name'), 'gpt-4')]",
+                "[resourceId('Microsoft.CognitiveServices/accounts/deployments', parameters('accounts_byc_openai_name'), 'gpt-4o')]",
                 "[resourceId('Microsoft.CognitiveServices/accounts', parameters('accounts_byc_openai_name'))]"
               ]
             }
@@ -1898,13 +1898,13 @@
             "value": "[reference(resourceId('Microsoft.Resources/deployments', 'deploy_azure_open_ai'), '2022-09-01').outputs.openAIOutput.value.openAPIEndpoint]"
           },
           "AzureOpenAIModel": {
-            "value": "gpt-4"
+            "value": "gpt-4o"
           },
           "AzureOpenAIKey": {
             "value": "[reference(resourceId('Microsoft.Resources/deployments', 'deploy_azure_open_ai'), '2022-09-01').outputs.openAIOutput.value.openAPIKey]"
           },
           "AzureOpenAIModelName": {
-            "value": "gpt-4"
+            "value": "gpt-4o"
           },
           "AzureOpenAITemperature": {
             "value": "0"
@@ -2154,7 +2154,7 @@
             },
             "AzureOpenAIModelName": {
               "type": "string",
-              "defaultValue": "gpt-4",
+              "defaultValue": "gpt-4o",
               "metadata": {
                 "description": "Azure OpenAI Model Name"
               }
