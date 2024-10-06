@@ -845,7 +845,7 @@
             {
               "type": "Microsoft.CognitiveServices/accounts/deployments",
               "apiVersion": "2023-05-01",
-              "name": "[format('{0}/{1}', parameters('accounts_byc_openai_name'), 'gpt-4')]",
+              "name": "[format('{0}/{1}', parameters('accounts_byc_openai_name'), 'gpt-4o')]",
               "sku": {
                 "name": "Standard",
                 "capacity": 10
@@ -853,8 +853,8 @@
               "properties": {
                 "model": {
                   "format": "OpenAI",
-                  "name": "gpt-4",
-                  "version": "0125-Preview"
+                  "name": "gpt-4o",
+                  "version": "2024-05-13"
                 },
                 "versionUpgradeOption": "OnceCurrentVersionExpired",
                 "raiPolicyName": "Microsoft.Default"
